@@ -4,6 +4,7 @@ Resource    ../Login-Folder/Login.resource
 Resource    ../Marketing-Cycle-Folder/Marketing Cycle.resource
 Resource    ../Marketing-Cycle-Folder/Marketing Cycle Detail.resource
 Resource    ../Marketing-Cycle-Folder/Target KPI.resource
+Resource    ../Marketing-Cycle-Folder/TCL.resource
 Suite Setup    Open Different Browser
 *** Keywords ***
 Open Different Browser

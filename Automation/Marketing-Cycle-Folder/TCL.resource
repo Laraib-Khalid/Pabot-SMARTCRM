@@ -4,7 +4,7 @@ Resource    Contact Business Unit.resource
 Resource    ../Marketing-Cycle-Folder/Marketing Cycle.resource
 
 *** Variables ***
-${CONTACT_TCL_NEW_BUTTON}  xpath=//button[contains(.,'New')]//ancestor::li[@data-target-selection-name="sfdc:StandardButton.Target_Customer_List__c.New"]
+${CONTACT_TCL_NEW_BUTTON}  xpath=//li[@data-target-selection-name="sfdc:StandardButton.Target_Customer_List__c.New"]//button[contains(.,'New')]
 ${NEW_CONTACT_TCL_PAGE}  New Target Customer List
 #${SEARCH_CONTACT_TCL_DROWNDOWN_XPATH}  xpath=(//input[contains(@id,'combobox-input-')])[2]
 #${SEARCH_CONTACT_TCL_TEXT}  US-ENT & Surgery
@@ -33,9 +33,9 @@ ${DELETE_ACTION_CONTACT_TCL_XPATH}   xpath=//a[@class='slds-button slds-button--
 
 *** Keywords ***
 Create Contact TCL
-    Sleep    5s
-    Click on Contact Related Tab
-    Execute JavaScript    window.scrollBy(0, 600);
+#    Sleep    5s
+#    Click on Contact Related Tab
+#    Execute JavaScript    window.scrollBy(0, 600);
     Sleep    10s
     Click Element    ${CONTACT_TCL_NEW_BUTTON}
     Wait Until Page Contains    ${NEW_CONTACT_TCL_PAGE}     10s
