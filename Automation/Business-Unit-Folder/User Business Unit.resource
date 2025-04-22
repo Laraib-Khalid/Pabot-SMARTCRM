@@ -1,7 +1,7 @@
 *** Settings ***
 Library     SeleniumLibrary
 Resource    Business Unit.resource
-Resource    ../Contact-Folder/TCL.resource
+Resource    ../Marketing-Cycle-Folder/TCL.resource
 
 *** Variables ***
 # Create Business Unit XPath
