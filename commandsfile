@@ -1,0 +1,7 @@
+pabot --processes 3 --outputdir Results Account-Folder/*.robot Contact-Folder/*.robot Business-Unit-Folder/*.robot Marketing-Cycle-Folder/*.robot
+
+
+
+pabot --processes 3 --outputdir Results --listener allure_robotframework:./allure-results Account-Folder/*.robot Contact-Folder/*.robot Business-Unit-Folder/*.robot Marketing-Cycle-Folder/*.robot
+allure generate ./allure-results --clean -o ./allure-report
+allure open ./allure-report
