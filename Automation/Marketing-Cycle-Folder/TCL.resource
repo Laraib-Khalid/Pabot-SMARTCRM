@@ -1,6 +1,6 @@
 *** Settings ***
 Library     SeleniumLibrary
-Resource    Contact Business Unit.resource
+Resource    ../Contact-Folder/Contact Business Unit.resource
 Resource    ../Marketing-Cycle-Folder/Marketing Cycle.resource
 
 *** Variables ***
